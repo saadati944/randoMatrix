@@ -147,5 +147,10 @@ namespace random_matrix
                 Invoke(new Action(() => btnDraw.Text = "Stop"));
             }
         }
+
+        private void btnclear_Click(object sender, EventArgs e)
+        {
+            lstLog.Items.Clear();
+        }
     }
 }

@@ -52,6 +52,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.clrBackcolor = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnclear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCons)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPointSize)).BeginInit();
@@ -97,7 +98,7 @@
             this.lstLog.FormattingEnabled = true;
             this.lstLog.Location = new System.Drawing.Point(391, 38);
             this.lstLog.Name = "lstLog";
-            this.lstLog.Size = new System.Drawing.Size(397, 368);
+            this.lstLog.Size = new System.Drawing.Size(397, 342);
             this.lstLog.TabIndex = 3;
             // 
             // label1
@@ -356,11 +357,23 @@
             this.label9.TabIndex = 21;
             this.label9.Text = "back color :";
             // 
+            // btnclear
+            // 
+            this.btnclear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnclear.Location = new System.Drawing.Point(391, 386);
+            this.btnclear.Name = "btnclear";
+            this.btnclear.Size = new System.Drawing.Size(397, 23);
+            this.btnclear.TabIndex = 23;
+            this.btnclear.Text = "clear logs";
+            this.btnclear.UseVisualStyleBackColor = true;
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnclear);
             this.Controls.Add(this.clrBackcolor);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.numHeight);
@@ -423,6 +436,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel clrBackcolor;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnclear;
     }
 }
 
