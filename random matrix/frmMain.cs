@@ -31,7 +31,7 @@ namespace random_matrix
             if (btnDraw.Text == "Draw")
             {
                 log("drawing ...");
-                Task.Run(new Action(() => draw((int)numCount.Value, (int)numCons.Value, (int)numPointSize.Value, (int)numLineWidth.Value, (int)numWidth.Value, (int)numHeight.Value, clrBackcolor.BackColor, clrPointColor.BackColor, clrLineColor.BackColor, txtSaveTo.Text)));
+                Task.Run(new Action(() => draw((int)numCount.Value, (int)numCons.Value, (int)numPointSize.Value, (float)numLineWidth.Value, (int)numWidth.Value, (int)numHeight.Value, clrBackcolor.BackColor, clrPointColor.BackColor, clrLineColor.BackColor, txtSaveTo.Text)));
                 stoped(false);
             }
             else
@@ -42,7 +42,7 @@ namespace random_matrix
             }
         }
 
-        void draw(int points, int cons, int psize, int lsize, int width, int height, Color bcolor, Color pcolor, Color lcolor, string path)
+        void draw(int points, int cons, int psize, float lsize, int width, int height, Color bcolor, Color pcolor, Color lcolor, string path)
         {
             try
             {
