@@ -48,12 +48,29 @@ namespace random_matrix
             {
                 Bitmap b = new Bitmap(width, height);
                 Graphics g = Graphics.FromImage(b as Image);
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
+                log($"set background color to {bcolor.ToString()}");
                 g.Clear(bcolor);
 
+                Random r = new Random();
+
+                log("create points list");
+                List<Point> ps = new List<Point>();
+                for(int i = 0; i < points; i++)
+                    ps.Add(new Point(r.Next(0,width),r.Next(0,height)));
+                log($"{points} points created");
 
 
+
+                log("drawing points");
+                for (int i = 0; i < points; i++)
+                    g.FillEllipse(new SolidBrush(pcolor), ps[i].X - psize / 2, ps[i].Y - psize / 2, psize, psize);
+                log($"points drawed with this color : {pcolor.ToString()}");
+
+                log("save file");
                 b.Save(path);
+                log($"file saved in {path}");
             }
             catch(Exception ex) { log(ex.Message);log("process ended because of errors."); }
             log("finish");
