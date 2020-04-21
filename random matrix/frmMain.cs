@@ -17,9 +17,13 @@ namespace random_matrix
             InitializeComponent();
         }
 
+
         private void clrLineColor_Click(object sender, EventArgs e)
         {
-
+            cd.Color=((Control)sender).BackColor;
+            if (cd.ShowDialog() == DialogResult.OK)
+                ((Control)sender).BackColor = cd.Color;
         }
+
     }
 }
