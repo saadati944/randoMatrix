@@ -320,6 +320,7 @@
             this.clrBackcolor.Name = "clrBackcolor";
             this.clrBackcolor.Size = new System.Drawing.Size(295, 20);
             this.clrBackcolor.TabIndex = 22;
+            this.clrBackcolor.Click += new System.EventHandler(this.clrLineColor_Click);
             // 
             // label9
             // 
