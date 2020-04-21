@@ -64,7 +64,7 @@
             // btnDraw
             // 
             this.btnDraw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDraw.Location = new System.Drawing.Point(713, 415);
+            this.btnDraw.Location = new System.Drawing.Point(897, 526);
             this.btnDraw.Name = "btnDraw";
             this.btnDraw.Size = new System.Drawing.Size(75, 23);
             this.btnDraw.TabIndex = 0;
@@ -76,16 +76,16 @@
             // 
             this.txtSaveTo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSaveTo.Location = new System.Drawing.Point(82, 417);
+            this.txtSaveTo.Location = new System.Drawing.Point(82, 528);
             this.txtSaveTo.Name = "txtSaveTo";
-            this.txtSaveTo.Size = new System.Drawing.Size(625, 20);
+            this.txtSaveTo.Size = new System.Drawing.Size(809, 20);
             this.txtSaveTo.TabIndex = 1;
             // 
             // lblSaveTo
             // 
             this.lblSaveTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSaveTo.AutoSize = true;
-            this.lblSaveTo.Location = new System.Drawing.Point(11, 420);
+            this.lblSaveTo.Location = new System.Drawing.Point(11, 531);
             this.lblSaveTo.Name = "lblSaveTo";
             this.lblSaveTo.Size = new System.Drawing.Size(64, 13);
             this.lblSaveTo.TabIndex = 2;
@@ -96,9 +96,9 @@
             this.lstLog.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lstLog.FormattingEnabled = true;
-            this.lstLog.Location = new System.Drawing.Point(391, 38);
+            this.lstLog.Location = new System.Drawing.Point(575, 38);
             this.lstLog.Name = "lstLog";
-            this.lstLog.Size = new System.Drawing.Size(397, 342);
+            this.lstLog.Size = new System.Drawing.Size(397, 446);
             this.lstLog.TabIndex = 3;
             // 
             // label1
@@ -126,7 +126,7 @@
             0,
             0});
             this.numCount.Name = "numCount";
-            this.numCount.Size = new System.Drawing.Size(295, 20);
+            this.numCount.Size = new System.Drawing.Size(479, 20);
             this.numCount.TabIndex = 5;
             this.numCount.Value = new decimal(new int[] {
             1,
@@ -138,7 +138,7 @@
             // 
             this.lblLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLog.AutoSize = true;
-            this.lblLog.Location = new System.Drawing.Point(391, 17);
+            this.lblLog.Location = new System.Drawing.Point(575, 17);
             this.lblLog.Name = "lblLog";
             this.lblLog.Size = new System.Drawing.Size(36, 13);
             this.lblLog.TabIndex = 6;
@@ -155,7 +155,7 @@
             0,
             0});
             this.numCons.Name = "numCons";
-            this.numCons.Size = new System.Drawing.Size(295, 20);
+            this.numCons.Size = new System.Drawing.Size(479, 20);
             this.numCons.TabIndex = 8;
             // 
             // label2
@@ -193,7 +193,7 @@
             this.clrPointColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.clrPointColor.Location = new System.Drawing.Point(83, 221);
             this.clrPointColor.Name = "clrPointColor";
-            this.clrPointColor.Size = new System.Drawing.Size(295, 20);
+            this.clrPointColor.Size = new System.Drawing.Size(479, 20);
             this.clrPointColor.TabIndex = 11;
             this.clrPointColor.Click += new System.EventHandler(this.clrLineColor_Click);
             // 
@@ -205,7 +205,7 @@
             this.clrLineColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.clrLineColor.Location = new System.Drawing.Point(83, 251);
             this.clrLineColor.Name = "clrLineColor";
-            this.clrLineColor.Size = new System.Drawing.Size(295, 20);
+            this.clrLineColor.Size = new System.Drawing.Size(479, 20);
             this.clrLineColor.TabIndex = 12;
             this.clrLineColor.Click += new System.EventHandler(this.clrLineColor_Click);
             // 
@@ -220,7 +220,7 @@
             0,
             0});
             this.numPointSize.Name = "numPointSize";
-            this.numPointSize.Size = new System.Drawing.Size(295, 20);
+            this.numPointSize.Size = new System.Drawing.Size(479, 20);
             this.numPointSize.TabIndex = 14;
             this.numPointSize.Value = new decimal(new int[] {
             1,
@@ -253,7 +253,7 @@
             0,
             65536});
             this.numLineWidth.Name = "numLineWidth";
-            this.numLineWidth.Size = new System.Drawing.Size(295, 20);
+            this.numLineWidth.Size = new System.Drawing.Size(479, 20);
             this.numLineWidth.TabIndex = 16;
             this.numLineWidth.Value = new decimal(new int[] {
             1,
@@ -286,7 +286,7 @@
             0,
             0});
             this.numHeight.Name = "numHeight";
-            this.numHeight.Size = new System.Drawing.Size(295, 20);
+            this.numHeight.Size = new System.Drawing.Size(479, 20);
             this.numHeight.TabIndex = 20;
             this.numHeight.Value = new decimal(new int[] {
             1080,
@@ -319,7 +319,7 @@
             0,
             0});
             this.numWidth.Name = "numWidth";
-            this.numWidth.Size = new System.Drawing.Size(295, 20);
+            this.numWidth.Size = new System.Drawing.Size(479, 20);
             this.numWidth.TabIndex = 18;
             this.numWidth.Value = new decimal(new int[] {
             1920,
@@ -344,7 +344,7 @@
             this.clrBackcolor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.clrBackcolor.Location = new System.Drawing.Point(83, 190);
             this.clrBackcolor.Name = "clrBackcolor";
-            this.clrBackcolor.Size = new System.Drawing.Size(295, 20);
+            this.clrBackcolor.Size = new System.Drawing.Size(479, 20);
             this.clrBackcolor.TabIndex = 22;
             this.clrBackcolor.Click += new System.EventHandler(this.clrLineColor_Click);
             // 
@@ -360,7 +360,7 @@
             // btnclear
             // 
             this.btnclear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnclear.Location = new System.Drawing.Point(391, 386);
+            this.btnclear.Location = new System.Drawing.Point(575, 497);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(397, 23);
             this.btnclear.TabIndex = 23;
@@ -372,7 +372,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.clrBackcolor);
             this.Controls.Add(this.label9);
@@ -397,6 +397,7 @@
             this.Controls.Add(this.lblSaveTo);
             this.Controls.Add(this.txtSaveTo);
             this.Controls.Add(this.btnDraw);
+            this.MinimumSize = new System.Drawing.Size(789, 358);
             this.Name = "frmMain";
             this.Text = "randomly matrix builder";
             ((System.ComponentModel.ISupportInitialize)(this.numCount)).EndInit();
