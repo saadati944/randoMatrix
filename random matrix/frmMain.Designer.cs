@@ -114,6 +114,11 @@
             this.numCount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numCount.Location = new System.Drawing.Point(82, 10);
+            this.numCount.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
             this.numCount.Minimum = new decimal(new int[] {
             1,
             0,
@@ -143,6 +148,11 @@
             this.numCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numCons.Location = new System.Drawing.Point(82, 38);
+            this.numCons.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.numCons.Name = "numCons";
             this.numCons.Size = new System.Drawing.Size(295, 20);
             this.numCons.TabIndex = 8;
@@ -203,9 +213,19 @@
             this.numPointSize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numPointSize.Location = new System.Drawing.Point(82, 64);
+            this.numPointSize.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numPointSize.Name = "numPointSize";
             this.numPointSize.Size = new System.Drawing.Size(295, 20);
             this.numPointSize.TabIndex = 14;
+            this.numPointSize.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label5
             // 
@@ -220,12 +240,17 @@
             // 
             this.numLineWidth.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.numLineWidth.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.numLineWidth.Location = new System.Drawing.Point(82, 93);
             this.numLineWidth.Minimum = new decimal(new int[] {
             1,
             0,
             0,
-            0});
+            65536});
             this.numLineWidth.Name = "numLineWidth";
             this.numLineWidth.Size = new System.Drawing.Size(295, 20);
             this.numLineWidth.TabIndex = 16;
