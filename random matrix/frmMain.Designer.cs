@@ -1,6 +1,6 @@
 ﻿namespace random_matrix
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -33,22 +33,22 @@
             this.lblSaveTo = new System.Windows.Forms.Label();
             this.lstLog = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numCount = new System.Windows.Forms.NumericUpDown();
             this.lblLog = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numCons = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.clrPointColor = new System.Windows.Forms.Panel();
+            this.clrLineColor = new System.Windows.Forms.Panel();
+            this.numPointSize = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numLineWidth = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCons)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPointSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLineWidth)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDraw
@@ -99,14 +99,14 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "points count :";
             // 
-            // numericUpDown1
+            // numCount
             // 
-            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.numCount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown1.Location = new System.Drawing.Point(77, 10);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(300, 20);
-            this.numericUpDown1.TabIndex = 5;
+            this.numCount.Location = new System.Drawing.Point(82, 10);
+            this.numCount.Name = "numCount";
+            this.numCount.Size = new System.Drawing.Size(295, 20);
+            this.numCount.TabIndex = 5;
             // 
             // lblLog
             // 
@@ -118,14 +118,14 @@
             this.lblLog.TabIndex = 6;
             this.lblLog.Text = "Logs :";
             // 
-            // numericUpDown2
+            // numCons
             // 
-            this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.numCons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown2.Location = new System.Drawing.Point(77, 38);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(300, 20);
-            this.numericUpDown2.TabIndex = 8;
+            this.numCons.Location = new System.Drawing.Point(82, 38);
+            this.numCons.Name = "numCons";
+            this.numCons.Size = new System.Drawing.Size(295, 20);
+            this.numCons.TabIndex = 8;
             // 
             // label2
             // 
@@ -154,34 +154,34 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "lines color :";
             // 
-            // panel1
+            // clrPointColor
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.clrPointColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(77, 124);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 20);
-            this.panel1.TabIndex = 11;
+            this.clrPointColor.BackColor = System.Drawing.Color.Black;
+            this.clrPointColor.Location = new System.Drawing.Point(82, 124);
+            this.clrPointColor.Name = "clrPointColor";
+            this.clrPointColor.Size = new System.Drawing.Size(295, 20);
+            this.clrPointColor.TabIndex = 11;
             // 
-            // panel2
+            // clrLineColor
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.clrLineColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(77, 154);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 20);
-            this.panel2.TabIndex = 12;
+            this.clrLineColor.BackColor = System.Drawing.Color.Black;
+            this.clrLineColor.Location = new System.Drawing.Point(82, 154);
+            this.clrLineColor.Name = "clrLineColor";
+            this.clrLineColor.Size = new System.Drawing.Size(295, 20);
+            this.clrLineColor.TabIndex = 12;
             // 
-            // numericUpDown3
+            // numPointSize
             // 
-            this.numericUpDown3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.numPointSize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown3.Location = new System.Drawing.Point(77, 64);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(300, 20);
-            this.numericUpDown3.TabIndex = 14;
+            this.numPointSize.Location = new System.Drawing.Point(82, 64);
+            this.numPointSize.Name = "numPointSize";
+            this.numPointSize.Size = new System.Drawing.Size(295, 20);
+            this.numPointSize.TabIndex = 14;
             // 
             // label5
             // 
@@ -192,14 +192,14 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "points size :";
             // 
-            // numericUpDown4
+            // numLineWidth
             // 
-            this.numericUpDown4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.numLineWidth.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown4.Location = new System.Drawing.Point(77, 93);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(300, 20);
-            this.numericUpDown4.TabIndex = 16;
+            this.numLineWidth.Location = new System.Drawing.Point(82, 93);
+            this.numLineWidth.Name = "numLineWidth";
+            this.numLineWidth.Size = new System.Drawing.Size(295, 20);
+            this.numLineWidth.TabIndex = 16;
             // 
             // label6
             // 
@@ -210,34 +210,34 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "lines width :";
             // 
-            // Form1
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.numericUpDown4);
+            this.Controls.Add(this.numLineWidth);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.numPointSize);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.clrLineColor);
+            this.Controls.Add(this.clrPointColor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.numCons);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblLog);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numCount);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstLog);
             this.Controls.Add(this.lblSaveTo);
             this.Controls.Add(this.txtSaveTo);
             this.Controls.Add(this.btnDraw);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            this.Name = "frmMain";
+            this.Text = "randomly matrix builder";
+            ((System.ComponentModel.ISupportInitialize)(this.numCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCons)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPointSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLineWidth)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,17 +250,17 @@
         private System.Windows.Forms.Label lblSaveTo;
         private System.Windows.Forms.ListBox lstLog;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numCount;
         private System.Windows.Forms.Label lblLog;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numCons;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.Panel clrPointColor;
+        private System.Windows.Forms.Panel clrLineColor;
+        private System.Windows.Forms.NumericUpDown numPointSize;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown numLineWidth;
         private System.Windows.Forms.Label label6;
     }
 }
