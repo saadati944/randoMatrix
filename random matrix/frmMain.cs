@@ -16,5 +16,10 @@ namespace random_matrix
         {
             InitializeComponent();
         }
+
+        private void clrLineColor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
