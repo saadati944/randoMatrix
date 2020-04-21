@@ -30,12 +30,23 @@ namespace random_matrix
         {
             if (btnDraw.Text == "Draw")
             {
+                log("drawing ...");
                 stoped(false);
             }
             else
             {
+                log("process stoped !!!");
                 stoped();
             }
+        }
+
+        void log(string mes)
+        {
+            try
+            {
+                Invoke(new Action(() => lstLog.Items.Add(mes)));
+            }
+            catch { }
         }
 
         void stoped(bool istrue = true)
