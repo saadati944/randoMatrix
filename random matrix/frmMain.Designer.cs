@@ -50,6 +50,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.numWidth = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
+            this.clrBackcolor = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCons)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPointSize)).BeginInit();
@@ -157,16 +159,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 190);
+            this.label3.Location = new System.Drawing.Point(11, 221);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "points color";
+            this.label3.Text = "points color :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 222);
+            this.label4.Location = new System.Drawing.Point(12, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 13);
             this.label4.TabIndex = 10;
@@ -178,7 +180,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.clrPointColor.BackColor = System.Drawing.Color.Black;
             this.clrPointColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.clrPointColor.Location = new System.Drawing.Point(83, 190);
+            this.clrPointColor.Location = new System.Drawing.Point(83, 221);
             this.clrPointColor.Name = "clrPointColor";
             this.clrPointColor.Size = new System.Drawing.Size(295, 20);
             this.clrPointColor.TabIndex = 11;
@@ -190,7 +192,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.clrLineColor.BackColor = System.Drawing.Color.Black;
             this.clrLineColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.clrLineColor.Location = new System.Drawing.Point(83, 220);
+            this.clrLineColor.Location = new System.Drawing.Point(83, 251);
             this.clrLineColor.Name = "clrLineColor";
             this.clrLineColor.Size = new System.Drawing.Size(295, 20);
             this.clrLineColor.TabIndex = 12;
@@ -308,11 +310,33 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "width :";
             // 
+            // clrBackcolor
+            // 
+            this.clrBackcolor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clrBackcolor.BackColor = System.Drawing.Color.Black;
+            this.clrBackcolor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clrBackcolor.Location = new System.Drawing.Point(83, 190);
+            this.clrBackcolor.Name = "clrBackcolor";
+            this.clrBackcolor.Size = new System.Drawing.Size(295, 20);
+            this.clrBackcolor.TabIndex = 22;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(11, 190);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "back color :";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.clrBackcolor);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.numHeight);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.numWidth);
@@ -371,6 +395,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown numWidth;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel clrBackcolor;
+        private System.Windows.Forms.Label label9;
     }
 }
 

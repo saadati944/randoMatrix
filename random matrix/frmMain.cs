@@ -46,6 +46,8 @@ namespace random_matrix
         {
             try
             {
+                Bitmap b = new Bitmap(width, height);
+                Graphics g = Graphics.FromImage(b as Image);
 
             }
             catch(Exception ex) { log(ex.Message);log("process ended because of errors."); }
