@@ -21,7 +21,7 @@ namespace random_matrix
 
         private void clrLineColor_Click(object sender, EventArgs e)
         {
-            cd.Color=((Control)sender).BackColor;
+            cd.Color = ((Control)sender).BackColor;
             if (cd.ShowDialog() == DialogResult.OK)
                 ((Control)sender).BackColor = cd.Color;
         }
@@ -31,7 +31,7 @@ namespace random_matrix
             if (btnDraw.Text == "Draw")
             {
                 log("drawing ...");
-                Task.Run(new Action(() => draw((int)numCount.Value, (int)numCons.Value, (int)numPointSize.Value, (int)numLineWidth.Value, (int)numWidth.Value, (int)numHeight.Value, clrBackcolor.BackColor, clrPointColor.BackColor, clrLineColor.BackColor, txtSaveTo.Text))) ;
+                Task.Run(new Action(() => draw((int)numCount.Value, (int)numCons.Value, (int)numPointSize.Value, (int)numLineWidth.Value, (int)numWidth.Value, (int)numHeight.Value, clrBackcolor.BackColor, clrPointColor.BackColor, clrLineColor.BackColor, txtSaveTo.Text)));
                 stoped(false);
             }
             else
@@ -42,7 +42,7 @@ namespace random_matrix
             }
         }
 
-        void draw(int points,int cons,int psize,int lsize,int width,int height,Color bcolor,Color pcolor,Color lcolor, string path)
+        void draw(int points, int cons, int psize, int lsize, int width, int height, Color bcolor, Color pcolor, Color lcolor, string path)
         {
             try
             {
@@ -57,11 +57,38 @@ namespace random_matrix
 
                 log("create points list");
                 List<Point> ps = new List<Point>();
-                for(int i = 0; i < points; i++)
-                    ps.Add(new Point(r.Next(0,width),r.Next(0,height)));
+                for (int i = 0; i < points; i++)
+                    ps.Add(new Point(r.Next(0, width), r.Next(0, height)));
                 log($"{points} points created");
 
 
+                log("creating connections list");
+                List<Rectangle> ls = new List<Rectangle>();
+                for (int i = 0; i < cons; i++)
+                {
+                    //maybe all connections are avaliable so app shouldn`t hang.
+                    for (int j = 0; j < 100; j++)
+                    {
+                        Point p1 = ps[r.Next(0, points)];
+                        Point p2 = ps[r.Next(0, points)];
+                        if (!ls.Contains(new Rectangle(p1.X, p1.Y, p2.X, p2.Y)) && !ls.Contains(new Rectangle(p2.X, p2.Y, p1.X, p1.Y)))
+                        {
+                            ls.Add(new Rectangle(p1.X, p1.Y, p2.X, p2.Y));
+                            break;
+                        }
+                        log($"can`t create line {i}");
+                    }
+                }
+                log($"{ls.Count}connections created");
+
+
+                log("drawing lines");
+                Pen lp = new Pen(lcolor, lsize);
+                for (int i = 0; i < ls.Count; i++)
+                {
+                    g.DrawLine(lp,ls[i].X,ls[i].Y, ls[i].Width, ls[i].Height);
+                }
+                log($"{ls.Count} lines drawed with this color : {lcolor.ToString()}");
 
                 log("drawing points");
                 for (int i = 0; i < points; i++)
@@ -72,7 +99,7 @@ namespace random_matrix
                 b.Save(path);
                 log($"file saved in {path}");
             }
-            catch(Exception ex) { log(ex.Message);log("process ended because of errors."); }
+            catch (Exception ex) { log(ex.Message); log("process ended because of errors."); }
             log("finish");
             stoped();
         }
@@ -98,7 +125,8 @@ namespace random_matrix
 
             }
             else
-            {       foreach (Control x in this.Controls)
+            {
+                foreach (Control x in this.Controls)
                     if (x != lblLog && x != btnDraw)
                         Invoke(new Action(() => x.Enabled = false));
                 stop = false;
