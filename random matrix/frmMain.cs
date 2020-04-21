@@ -17,6 +17,7 @@ namespace random_matrix
             InitializeComponent();
         }
 
+        bool stop = false;
 
         private void clrLineColor_Click(object sender, EventArgs e)
         {
@@ -25,5 +26,35 @@ namespace random_matrix
                 ((Control)sender).BackColor = cd.Color;
         }
 
+        private void btnDraw_Click(object sender, EventArgs e)
+        {
+            if (btnDraw.Text == "Draw")
+            {
+                stoped(false);
+            }
+            else
+            {
+                stoped();
+            }
+        }
+
+        void stoped(bool istrue = true)
+        {
+            if (istrue)
+            {
+                foreach (Control x in this.Controls)
+                    if (x != lblLog && x != btnDraw)
+                        x.Enabled = true;
+                stop = true;
+                btnDraw.Text = "Draw";
+            }
+            else
+            {       foreach (Control x in this.Controls)
+                    if (x != lblLog && x != btnDraw)
+                        x.Enabled = false;
+                stop = false;
+                btnDraw.Text = "Stop";
+            }
+        }
     }
 }

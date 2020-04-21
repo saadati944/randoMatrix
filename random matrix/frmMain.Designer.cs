@@ -67,6 +67,7 @@
             this.btnDraw.TabIndex = 0;
             this.btnDraw.Text = "Draw";
             this.btnDraw.UseVisualStyleBackColor = true;
+            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
             // 
             // txtSaveTo
             // 
