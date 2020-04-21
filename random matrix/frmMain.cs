@@ -31,13 +31,26 @@ namespace random_matrix
             if (btnDraw.Text == "Draw")
             {
                 log("drawing ...");
+                Task.Run(new Action(()=>draw((int)numCount.Value,(int)numCons.Value,(int)numPointSize.Value,(int)numLineWidth.Value,(int)numWidth.Value,(int)numHeight.Value,clrPointColor.BackColor,clrLineColor.BackColor,txtSaveTo.Text)));
                 stoped(false);
             }
             else
             {
-                log("process stoped !!!");
-                stoped();
+                stop = true;
+                btnDraw.Enabled = false;
+                log("process is stoping !!!");
             }
+        }
+
+        void draw(int points,int cons,int psize,int lsize,int width,int height,Color pcolor,Color lcolor, string path)
+        {
+            try
+            {
+
+            }
+            catch(Exception ex) { log(ex.Message);log("process ended because of errors."); }
+            log("finish");
+            stoped();
         }
 
         void log(string mes)
@@ -54,17 +67,18 @@ namespace random_matrix
             if (istrue)
             {
                 foreach (Control x in this.Controls)
-                    if (x != lblLog && x != btnDraw)
-                        x.Enabled = true;
+                    if (x != lblLog)
+                        Invoke(new Action(() => x.Enabled = true));
                 stop = true;
-                btnDraw.Text = "Draw";
+                Invoke(new Action(() => btnDraw.Text = "Draw"));
+
             }
             else
             {       foreach (Control x in this.Controls)
                     if (x != lblLog && x != btnDraw)
-                        x.Enabled = false;
+                        Invoke(new Action(() => x.Enabled = false));
                 stop = false;
-                btnDraw.Text = "Stop";
+                Invoke(new Action(() => btnDraw.Text = "Stop"));
             }
         }
     }
