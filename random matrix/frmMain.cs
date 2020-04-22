@@ -31,7 +31,7 @@ namespace random_matrix
             if (btnDraw.Text == "Draw")
             {
                 log("drawing ...");
-                Task.Run(new Action(() => draw((int)numCount.Value, (int)numCons.Value, (int)numPointSize.Value, (float)numLineWidth.Value, (int)numWidth.Value, (int)numHeight.Value, clrBackcolor.BackColor, clrPointColor.BackColor, clrLineColor.BackColor, txtSaveTo.Text)));
+                Task.Run(new Action(() => draw((int)numCount.Value, (int)numCons.Value, (int)numPointSize.Value, (float)numLineWidth.Value, (int)numWidth.Value, (int)numHeight.Value,(int)numRetry.Value, clrBackcolor.BackColor, clrPointColor.BackColor, clrLineColor.BackColor, txtSaveTo.Text)));
                 stoped(false);
             }
             else
@@ -42,7 +42,7 @@ namespace random_matrix
             }
         }
 
-        void draw(int points, int cons, int psize, float lsize, int width, int height, Color bcolor, Color pcolor, Color lcolor, string path)
+        void draw(int points, int cons, int psize, float lsize, int width, int height, int retry, Color bcolor, Color pcolor, Color lcolor, string path)
         {
             try
             {
@@ -74,7 +74,7 @@ namespace random_matrix
                 {
                     if (stop) throw new Exception("user canseled.");
                     //maybe all connections are avaliable so app shouldn`t hang.
-                    for (int j = 0; j < 100; j++)
+                    for (int j = 0; j < retry; j++)
                     {
                         if (stop) throw new Exception("user canseled.");
                         Point p1 = ps[r.Next(0, points)];
