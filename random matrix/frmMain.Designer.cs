@@ -53,12 +53,15 @@
             this.clrBackcolor = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.btnclear = new System.Windows.Forms.Button();
+            this.numRetry = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCons)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPointSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLineWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRetry)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDraw
@@ -170,7 +173,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 221);
+            this.label3.Location = new System.Drawing.Point(11, 265);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 9;
@@ -179,7 +182,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 253);
+            this.label4.Location = new System.Drawing.Point(12, 297);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 13);
             this.label4.TabIndex = 10;
@@ -191,7 +194,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.clrPointColor.BackColor = System.Drawing.Color.Black;
             this.clrPointColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.clrPointColor.Location = new System.Drawing.Point(83, 221);
+            this.clrPointColor.Location = new System.Drawing.Point(83, 265);
             this.clrPointColor.Name = "clrPointColor";
             this.clrPointColor.Size = new System.Drawing.Size(479, 20);
             this.clrPointColor.TabIndex = 7;
@@ -203,7 +206,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.clrLineColor.BackColor = System.Drawing.Color.Black;
             this.clrLineColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.clrLineColor.Location = new System.Drawing.Point(83, 251);
+            this.clrLineColor.Location = new System.Drawing.Point(83, 295);
             this.clrLineColor.Name = "clrLineColor";
             this.clrLineColor.Size = new System.Drawing.Size(479, 20);
             this.clrLineColor.TabIndex = 8;
@@ -347,7 +350,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.clrBackcolor.BackColor = System.Drawing.Color.Black;
             this.clrBackcolor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.clrBackcolor.Location = new System.Drawing.Point(83, 190);
+            this.clrBackcolor.Location = new System.Drawing.Point(83, 234);
             this.clrBackcolor.Name = "clrBackcolor";
             this.clrBackcolor.Size = new System.Drawing.Size(479, 20);
             this.clrBackcolor.TabIndex = 6;
@@ -356,7 +359,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(11, 190);
+            this.label9.Location = new System.Drawing.Point(11, 234);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(63, 13);
             this.label9.TabIndex = 21;
@@ -373,11 +376,36 @@
             this.btnclear.UseVisualStyleBackColor = true;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
+            // numRetry
+            // 
+            this.numRetry.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.numRetry.Location = new System.Drawing.Point(82, 181);
+            this.numRetry.Name = "numRetry";
+            this.numRetry.Size = new System.Drawing.Size(479, 20);
+            this.numRetry.TabIndex = 22;
+            this.numRetry.Value = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(11, 183);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 13);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "retry count :";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.numRetry);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.clrBackcolor);
             this.Controls.Add(this.label9);
@@ -411,6 +439,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numLineWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRetry)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,6 +472,8 @@
         private System.Windows.Forms.Panel clrBackcolor;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnclear;
+        private System.Windows.Forms.NumericUpDown numRetry;
+        private System.Windows.Forms.Label label10;
     }
 }
 
