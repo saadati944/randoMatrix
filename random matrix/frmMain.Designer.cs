@@ -67,7 +67,7 @@
             this.btnDraw.Location = new System.Drawing.Point(897, 526);
             this.btnDraw.Name = "btnDraw";
             this.btnDraw.Size = new System.Drawing.Size(75, 23);
-            this.btnDraw.TabIndex = 0;
+            this.btnDraw.TabIndex = 10;
             this.btnDraw.Text = "Draw";
             this.btnDraw.UseVisualStyleBackColor = true;
             this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
@@ -79,7 +79,7 @@
             this.txtSaveTo.Location = new System.Drawing.Point(82, 528);
             this.txtSaveTo.Name = "txtSaveTo";
             this.txtSaveTo.Size = new System.Drawing.Size(809, 20);
-            this.txtSaveTo.TabIndex = 1;
+            this.txtSaveTo.TabIndex = 9;
             // 
             // lblSaveTo
             // 
@@ -99,7 +99,7 @@
             this.lstLog.Location = new System.Drawing.Point(575, 38);
             this.lstLog.Name = "lstLog";
             this.lstLog.Size = new System.Drawing.Size(397, 446);
-            this.lstLog.TabIndex = 3;
+            this.lstLog.TabIndex = 11;
             // 
             // label1
             // 
@@ -127,7 +127,7 @@
             0});
             this.numCount.Name = "numCount";
             this.numCount.Size = new System.Drawing.Size(479, 20);
-            this.numCount.TabIndex = 5;
+            this.numCount.TabIndex = 0;
             this.numCount.Value = new decimal(new int[] {
             1,
             0,
@@ -156,7 +156,7 @@
             0});
             this.numCons.Name = "numCons";
             this.numCons.Size = new System.Drawing.Size(479, 20);
-            this.numCons.TabIndex = 8;
+            this.numCons.TabIndex = 1;
             // 
             // label2
             // 
@@ -194,7 +194,7 @@
             this.clrPointColor.Location = new System.Drawing.Point(83, 221);
             this.clrPointColor.Name = "clrPointColor";
             this.clrPointColor.Size = new System.Drawing.Size(479, 20);
-            this.clrPointColor.TabIndex = 11;
+            this.clrPointColor.TabIndex = 7;
             this.clrPointColor.Click += new System.EventHandler(this.clrLineColor_Click);
             // 
             // clrLineColor
@@ -206,7 +206,7 @@
             this.clrLineColor.Location = new System.Drawing.Point(83, 251);
             this.clrLineColor.Name = "clrLineColor";
             this.clrLineColor.Size = new System.Drawing.Size(479, 20);
-            this.clrLineColor.TabIndex = 12;
+            this.clrLineColor.TabIndex = 8;
             this.clrLineColor.Click += new System.EventHandler(this.clrLineColor_Click);
             // 
             // numPointSize
@@ -221,7 +221,7 @@
             0});
             this.numPointSize.Name = "numPointSize";
             this.numPointSize.Size = new System.Drawing.Size(479, 20);
-            this.numPointSize.TabIndex = 14;
+            this.numPointSize.TabIndex = 2;
             this.numPointSize.Value = new decimal(new int[] {
             1,
             0,
@@ -255,7 +255,7 @@
             65536});
             this.numLineWidth.Name = "numLineWidth";
             this.numLineWidth.Size = new System.Drawing.Size(479, 20);
-            this.numLineWidth.TabIndex = 16;
+            this.numLineWidth.TabIndex = 3;
             this.numLineWidth.Value = new decimal(new int[] {
             5,
             0,
@@ -292,7 +292,7 @@
             0});
             this.numHeight.Name = "numHeight";
             this.numHeight.Size = new System.Drawing.Size(479, 20);
-            this.numHeight.TabIndex = 20;
+            this.numHeight.TabIndex = 5;
             this.numHeight.Value = new decimal(new int[] {
             1080,
             0,
@@ -325,7 +325,7 @@
             0});
             this.numWidth.Name = "numWidth";
             this.numWidth.Size = new System.Drawing.Size(479, 20);
-            this.numWidth.TabIndex = 18;
+            this.numWidth.TabIndex = 4;
             this.numWidth.Value = new decimal(new int[] {
             1920,
             0,
@@ -350,7 +350,7 @@
             this.clrBackcolor.Location = new System.Drawing.Point(83, 190);
             this.clrBackcolor.Name = "clrBackcolor";
             this.clrBackcolor.Size = new System.Drawing.Size(479, 20);
-            this.clrBackcolor.TabIndex = 22;
+            this.clrBackcolor.TabIndex = 6;
             this.clrBackcolor.Click += new System.EventHandler(this.clrLineColor_Click);
             // 
             // label9
@@ -368,7 +368,7 @@
             this.btnclear.Location = new System.Drawing.Point(575, 497);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(397, 23);
-            this.btnclear.TabIndex = 23;
+            this.btnclear.TabIndex = 12;
             this.btnclear.Text = "clear logs";
             this.btnclear.UseVisualStyleBackColor = true;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
