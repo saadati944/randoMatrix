@@ -241,6 +241,7 @@
             // 
             this.numLineWidth.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.numLineWidth.DecimalPlaces = 1;
             this.numLineWidth.Increment = new decimal(new int[] {
             1,
             0,
@@ -256,10 +257,10 @@
             this.numLineWidth.Size = new System.Drawing.Size(479, 20);
             this.numLineWidth.TabIndex = 16;
             this.numLineWidth.Value = new decimal(new int[] {
-            1,
+            5,
             0,
             0,
-            0});
+            65536});
             // 
             // label6
             // 
@@ -269,6 +270,10 @@
             this.label6.Size = new System.Drawing.Size(62, 13);
             this.label6.TabIndex = 15;
             this.label6.Text = "lines width :";
+            // 
+            // cd
+            // 
+            this.cd.FullOpen = true;
             // 
             // numHeight
             // 
