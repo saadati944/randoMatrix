@@ -70,7 +70,7 @@
             this.btnDraw.Location = new System.Drawing.Point(897, 526);
             this.btnDraw.Name = "btnDraw";
             this.btnDraw.Size = new System.Drawing.Size(75, 23);
-            this.btnDraw.TabIndex = 10;
+            this.btnDraw.TabIndex = 11;
             this.btnDraw.Text = "Draw";
             this.btnDraw.UseVisualStyleBackColor = true;
             this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
@@ -82,7 +82,7 @@
             this.txtSaveTo.Location = new System.Drawing.Point(82, 528);
             this.txtSaveTo.Name = "txtSaveTo";
             this.txtSaveTo.Size = new System.Drawing.Size(809, 20);
-            this.txtSaveTo.TabIndex = 9;
+            this.txtSaveTo.TabIndex = 10;
             // 
             // lblSaveTo
             // 
@@ -102,7 +102,7 @@
             this.lstLog.Location = new System.Drawing.Point(575, 38);
             this.lstLog.Name = "lstLog";
             this.lstLog.Size = new System.Drawing.Size(397, 446);
-            this.lstLog.TabIndex = 11;
+            this.lstLog.TabIndex = 13;
             // 
             // label1
             // 
@@ -197,7 +197,7 @@
             this.clrPointColor.Location = new System.Drawing.Point(83, 265);
             this.clrPointColor.Name = "clrPointColor";
             this.clrPointColor.Size = new System.Drawing.Size(479, 20);
-            this.clrPointColor.TabIndex = 7;
+            this.clrPointColor.TabIndex = 8;
             this.clrPointColor.Click += new System.EventHandler(this.clrLineColor_Click);
             // 
             // clrLineColor
@@ -209,7 +209,7 @@
             this.clrLineColor.Location = new System.Drawing.Point(83, 295);
             this.clrLineColor.Name = "clrLineColor";
             this.clrLineColor.Size = new System.Drawing.Size(479, 20);
-            this.clrLineColor.TabIndex = 8;
+            this.clrLineColor.TabIndex = 9;
             this.clrLineColor.Click += new System.EventHandler(this.clrLineColor_Click);
             // 
             // numPointSize
@@ -353,7 +353,7 @@
             this.clrBackcolor.Location = new System.Drawing.Point(83, 234);
             this.clrBackcolor.Name = "clrBackcolor";
             this.clrBackcolor.Size = new System.Drawing.Size(479, 20);
-            this.clrBackcolor.TabIndex = 6;
+            this.clrBackcolor.TabIndex = 7;
             this.clrBackcolor.Click += new System.EventHandler(this.clrLineColor_Click);
             // 
             // label9
@@ -383,7 +383,7 @@
             this.numRetry.Location = new System.Drawing.Point(82, 181);
             this.numRetry.Name = "numRetry";
             this.numRetry.Size = new System.Drawing.Size(479, 20);
-            this.numRetry.TabIndex = 22;
+            this.numRetry.TabIndex = 6;
             this.numRetry.Value = new decimal(new int[] {
             70,
             0,
