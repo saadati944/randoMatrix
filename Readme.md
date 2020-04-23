@@ -10,8 +10,8 @@ easily and randomly create beautiful matrices.
 
 ![example](https://github.com/saadati944/randoMatrix/raw/master/examples/t2.png)
 
-![example](https://github.com/saadati944/randoMatrix/raw/master/examples/t3.png)
+![example](https://github.com/saadati944/randoMatrix/raw/master/examples/t5.png)
 
 ![example](https://github.com/saadati944/randoMatrix/raw/master/examples/t4.png)
 
-![example](https://github.com/saadati944/randoMatrix/raw/master/examples/t5.png)
+![example](https://github.com/saadati944/randoMatrix/raw/master/examples/t3.png)
